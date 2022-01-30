@@ -43,7 +43,7 @@ public class ServiceSignUpActivity2 extends AppCompatActivity {
 
         Create_account_Button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view){
                 CreateAccount();
             }
         });
