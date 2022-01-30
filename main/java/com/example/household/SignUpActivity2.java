@@ -90,7 +90,7 @@ public class SignUpActivity2 extends AppCompatActivity {
 
         Rootref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
+            public void onDataChange(@NonNull DataSnapshot snapshot){
 
                 if (!(snapshot.child("Users").child(phone_number).exists()))
                 {
