@@ -29,9 +29,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-
 public class Plumbing_Activity2 extends AppCompatActivity {
-
 
 private DatabaseReference ServiceRef;
 private RecyclerView recyclerView;
@@ -80,8 +78,5 @@ RecyclerView.LayoutManager layoutManager;
                 };
         recyclerView.setAdapter(adapter);
         adapter.startListening();
-
     }
-
-
 }
