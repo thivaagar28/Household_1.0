@@ -27,13 +27,7 @@ public class Home_user_Activity2 extends AppCompatActivity  {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
-     Button plumb, electrical, house_clean, pest;
-
-
-
-
-
-
+     Button plumb, electrical, house_clean, pest; // button variable for the service selecting
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +36,6 @@ public class Home_user_Activity2 extends AppCompatActivity  {
 
 
         //Buttons
-
-
-
-
-
-
        plumb = (Button) findViewById(R.id.plumbing); //plumbing
        plumb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,9 +58,6 @@ public class Home_user_Activity2 extends AppCompatActivity  {
             }
         });
 
-
-
-
         house_clean = (Button) findViewById(R.id.House_cleaning);  //house cleaning
         house_clean.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,8 +69,6 @@ public class Home_user_Activity2 extends AppCompatActivity  {
             }
         });
 
-
-
         pest = (Button) findViewById(R.id.Pest_control);  //pest control
         pest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +79,6 @@ public class Home_user_Activity2 extends AppCompatActivity  {
                 startActivity((intent));
             }
         });
-
 
         setUpToolbar();
         navigationView = (NavigationView) findViewById(R.id.navigation_menu);
@@ -119,7 +101,7 @@ public class Home_user_Activity2 extends AppCompatActivity  {
 //
 //                    }
                     //       break;
-                    case R.id.logout_button_logout_page:
+                    case R.id.logout_button_logout_page: // logout option for the user
                         Paper.book().destroy();
                         Intent logout_intent = new Intent(Home_user_Activity2.this, MainActivity.class);
                         startActivity((logout_intent));
@@ -127,7 +109,7 @@ public class Home_user_Activity2 extends AppCompatActivity  {
                         break;
 
 
-                    case R.id.nav_share: {
+                    case R.id.nav_share: { // sharing the app to others through online
 
                         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                         sharingIntent.setType("text/plain");
@@ -156,8 +138,4 @@ public class Home_user_Activity2 extends AppCompatActivity  {
         actionBarDrawerToggle.syncState();
 
     }
-
-
     }
-
-
