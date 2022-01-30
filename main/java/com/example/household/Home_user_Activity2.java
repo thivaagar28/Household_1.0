@@ -48,7 +48,7 @@ public class Home_user_Activity2 extends AppCompatActivity  {
         });
 
         electrical = (Button) findViewById(R.id.electrical);// electrical
-        electrical.setOnClickListener(new View.OnClickListener() {
+        electrical.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
 
@@ -105,7 +105,6 @@ public class Home_user_Activity2 extends AppCompatActivity  {
                         Paper.book().destroy();
                         Intent logout_intent = new Intent(Home_user_Activity2.this, MainActivity.class);
                         startActivity((logout_intent));
-
                         break;
 
 
@@ -129,7 +128,7 @@ public class Home_user_Activity2 extends AppCompatActivity  {
 
     }
 
-    public void setUpToolbar() {
+    public void setUpToolbar(){
         drawerLayout = findViewById(R.id.drawerLayout);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
