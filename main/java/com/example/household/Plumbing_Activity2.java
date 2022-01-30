@@ -49,16 +49,13 @@ RecyclerView.LayoutManager layoutManager;
         recyclerView.setLayoutManager(layoutManager);
 
     }
-
     @Override
     protected void onStart(){
         super.onStart();
-
         FirebaseRecyclerOptions<Category> options =
                 new FirebaseRecyclerOptions.Builder<Category>()
                 .setQuery(ServiceRef, Category.class)
                 .build();
-
 
         FirebaseRecyclerAdapter<Category, Service_View> adapter=
                 new FirebaseRecyclerAdapter<Category, Service_View>(options) {
@@ -67,7 +64,6 @@ RecyclerView.LayoutManager layoutManager;
                        service_view.txtName.setText(category.getName());
                         service_view.txtPhone.setText(category.getPhone_number());
                     }
-
                     @NonNull
                     @Override
                     public Service_View onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
