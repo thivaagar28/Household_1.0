@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         chck_box = (CheckBox) findViewById(R.id.remember_me);
         Paper.init(this);
 
-        Login_Button.setOnClickListener(new View.OnClickListener(){
+        Login_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) 
             {
@@ -54,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+
     private void LoginUser()
     {
         String Phone_Number = input_phone_number.getText().toString();
@@ -89,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Rootref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot){
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 if (snapshot.child(parentDpName).child(phone_number).exists())
                 {
@@ -119,14 +121,15 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
                 else{
-                    Toast.makeText(LoginActivity.this, "Account with this"+ phone_number + "does not exist!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Account with this "+ phone_number + " does not exist!!", Toast.LENGTH_SHORT).show();
                     LoadingBar.dismiss();
                     Toast.makeText(LoginActivity.this, "Please Sign Up to create an account", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error){
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
     }
