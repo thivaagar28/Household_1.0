@@ -23,7 +23,7 @@ import com.google.android.material.navigation.NavigationView;
 import io.paperdb.Paper;
 
 
-public class Home_user_Activity2 extends AppCompatActivity  {
+public class Home_user_Activity2 extends AppCompatActivity{
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
@@ -117,7 +117,6 @@ public class Home_user_Activity2 extends AppCompatActivity  {
                         sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareSub);
                         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
                         startActivity(Intent.createChooser(sharingIntent, "Share using"));
-
                     }
                     break;
                 }
