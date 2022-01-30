@@ -27,7 +27,7 @@ public class Service_Activity2 extends AppCompatActivity {
 
         //SignUP
         SIGNUP = (Button) findViewById(R.id.signup_button);
-        SIGNUP.setOnClickListener(new View.OnClickListener() {
+        SIGNUP.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 openSignUpActivity2();
