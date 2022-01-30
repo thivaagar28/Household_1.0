@@ -12,13 +12,12 @@
         android:id="@+id/textView"
         android:layout_width="243dp"
         android:layout_height="83dp"
-        android:autoSizeTextType="uniform"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:autoSizeTextType="uniform"
         android:text="  Customer"
         android:textColor="#7FECC0"
         android:textStyle="bold" />
-    
 
     <TextView
         android:id="@+id/textView1"
@@ -30,7 +29,7 @@
         android:autoSizeTextType="uniform"
         android:fontFamily="serif"
         android:text="Click sign up button if you are new to this app "
-        android:textAlignment="viewEnd"
+        android:textAlignment="center"
         android:textColor="#000000" />
 
     android:layout_marginTop="200dp"
