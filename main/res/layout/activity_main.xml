@@ -17,7 +17,6 @@
         android:autoSizeTextType="uniform"
         android:text="Welcome to"
         android:textColor="#00FFEA" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="191dp"
