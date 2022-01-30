@@ -9,6 +9,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -18,12 +20,23 @@ public class Sevice_Plumbing_Activity2 extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
-
+    Button CheckordersBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sevice_plumbing2);
+
+        CheckordersBtn = (Button) findViewById(R.id.check_orders_btn);
+        CheckordersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(Sevice_Plumbing_Activity2.this,AdminNewOrdersActivity.class);
+                startActivity((intent));
+            }
+        });
 
         setUpToolbar();
         navigationView = (NavigationView) findViewById(R.id.navigation_menu);
@@ -32,6 +45,8 @@ public class Sevice_Plumbing_Activity2 extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId())
                 {
+
+
                     case  R.id.service_nav_home:
 
                         Intent intent = new Intent(Sevice_Plumbing_Activity2.this, Sevice_Plumbing_Activity2.class);
@@ -61,6 +76,8 @@ public class Sevice_Plumbing_Activity2 extends AppCompatActivity {
                 return false;
             }
         });
+
+
     }
     public void setUpToolbar() {
         drawerLayout = findViewById(R.id.drawerLayout);
@@ -76,4 +93,5 @@ public class Sevice_Plumbing_Activity2 extends AppCompatActivity {
 
 
 
-    }
+}
+
