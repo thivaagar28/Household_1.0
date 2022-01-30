@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 openActivity2();
+                
+                //button to start the activity 
             }
         });
 
