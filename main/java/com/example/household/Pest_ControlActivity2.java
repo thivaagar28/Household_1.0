@@ -9,6 +9,6 @@ public class Pest_ControlActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(r.layout.activity_pest_control2);
+        setContentView(R.layout.activity_pest_control2);
     }
 }
