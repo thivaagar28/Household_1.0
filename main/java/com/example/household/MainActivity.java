@@ -71,11 +71,6 @@ public class MainActivity extends AppCompatActivity
         }
 
 
-
-
-
-
-
         String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
         String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
         if(UserPhoneKey != "" && UserPasswordKey != "")
@@ -164,6 +159,7 @@ public class MainActivity extends AppCompatActivity
                     {
                         Toast.makeText(MainActivity.this, "Logged in successfully!!!", Toast.LENGTH_SHORT).show();
                         LoadingBar.dismiss();
+                        
                         Toast.makeText(MainActivity.this, "Hello "+ usersData.getName()+" !!!", Toast.LENGTH_SHORT).show();
 
                         Intent intent = new Intent(MainActivity.this,Sevice_Plumbing_Activity2.class );
