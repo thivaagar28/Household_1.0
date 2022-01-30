@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Electrical_Service_Activity2 extends AppCompatActivity {
-
+public class Electrical_Service_Activity2 extends AppCompatActivity{
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_electrical_service2); // UI layout for the electric service
     }
