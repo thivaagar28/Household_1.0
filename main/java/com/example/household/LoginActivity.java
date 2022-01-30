@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 }
                 else{
-                    Toast.makeText(LoginActivity.this, "Account with this "+ phone_number + " does not exist!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Account with this"+ phone_number + "does not exist!", Toast.LENGTH_SHORT).show();
                     LoadingBar.dismiss();
                     Toast.makeText(LoginActivity.this, "Please Sign Up to create an account", Toast.LENGTH_SHORT).show();
                 }
@@ -129,7 +129,6 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }
