@@ -9,6 +9,6 @@ public class Electrical_Service_Activity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_electrical_service2);
+        setContentView(R.layout.activity_electrical_service2); // UI layout for the electric service
     }
 }
