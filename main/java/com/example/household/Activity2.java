@@ -44,7 +44,8 @@ public class Activity2 extends AppCompatActivity {
         SIGNUP = (Button) findViewById(R.id.signup_button);
         SIGNUP.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v){
+                
                 openSignUpActivity2();
             }
         });
