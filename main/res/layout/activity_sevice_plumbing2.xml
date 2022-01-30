@@ -9,33 +9,67 @@
     android:background="#F7FFFFFF"
     android:minWidth="19dp">
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:background="#F7FFFFFF"
-        android:layout_height="wrap_content">
 
 
-        <LinearLayout
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/androidimage"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F7FFFFFF"
-            android:orientation="vertical">
+            android:background="@color/design_default_color_primary_dark"
+            app:subtitleTextColor="#0A0A0A"
+            app:titleTextColor="#111111" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#F7FFFFFF"
-                app:subtitleTextColor="#0A0A0A"
-                app:titleTextColor="#111111" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Home"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="351dp"
+            android:layout_height="106dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:autoSizeTextType="uniform"
+            android:text="  Service Provider"
+            android:textColor="#7FECC0"
+            android:textStyle="bold" />
 
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="243dp"
+            android:layout_height="83dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="100dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="serif"
+            android:text="Click to check the service "
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/check_orders_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView1"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="Check new service"
+            android:layout_marginTop="200dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_menu"
         android:layout_width="match_parent"
