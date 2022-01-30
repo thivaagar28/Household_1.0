@@ -18,6 +18,9 @@
         android:text="  Customer"
         android:textColor="#7FECC0"
         android:textStyle="bold" />
+    
+    <TextView
+              android:id"@+id/textView"
 
     <TextView
         android:id="@+id/textView1"
