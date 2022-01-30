@@ -130,7 +130,6 @@ public class ServiceLoginActivity extends AppCompatActivity {
 
                     }
 
-
                 }
                 else{
                     Toast.makeText(ServiceLoginActivity.this, "Account with this "+ phone_number + " does not exist!!", Toast.LENGTH_SHORT).show();
