@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:background="@drawable/androidimage"
+    android:padding="25dp"
+    >
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="78dp"
+        android:autoSizeTextType="uniform"
+        android:text="One-Stop Service"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+</LinearLayout>

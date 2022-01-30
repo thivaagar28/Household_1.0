@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.household">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Household">
+        <activity
+            android:name=".ServiceSignUpActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Service_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Sevice_Plumbing_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Pest_ControlActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".House_Cleaning_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Electrical_Service_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Plumbing_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationMain2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_main2"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".Navigation_Main2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_main2"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".navigation_Main_Activity2"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_main2"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".HomeUser3Activity"
+            android:exported="false"
+            android:label="@string/title_activity_home_user3"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".HomeUser2Activity"
+            android:exported="false"
+            android:label="@string/title_activity_home_user2"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".Home_user_Activity2"
+            android:exported="false"
+            android:label="@string/title_activity_home_user2"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".tryActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_try2"
+            android:theme="@style/Theme.Household.NoActionBar" />
+        <activity
+            android:name=".SignUpActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
