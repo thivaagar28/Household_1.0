@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 openActivity2();
-                
-                //button to start the activity 
             }
         });
 
@@ -71,6 +69,11 @@ public class MainActivity extends AppCompatActivity
                 LoadingBar.show();
             }
         }
+
+
+
+
+
 
 
         String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
@@ -154,16 +157,20 @@ public class MainActivity extends AppCompatActivity
                 {
                     ServiceUsers usersData = snapshot.child("Service_Provider").child(field).child(phone_number).getValue(ServiceUsers.class);
 
+
+
+
                     if(usersData.getPassword().equals(password))
                     {
                         Toast.makeText(MainActivity.this, "Logged in successfully!!!", Toast.LENGTH_SHORT).show();
                         LoadingBar.dismiss();
-                        
                         Toast.makeText(MainActivity.this, "Hello "+ usersData.getName()+" !!!", Toast.LENGTH_SHORT).show();
 
                         Intent intent = new Intent(MainActivity.this,Sevice_Plumbing_Activity2.class );
 
                         startActivity(intent);
+
+
 
                     }
                     else{
@@ -171,6 +178,8 @@ public class MainActivity extends AppCompatActivity
                         Toast.makeText(MainActivity.this, "Password is incorrect!!!", Toast.LENGTH_SHORT).show();
 
                     }
+
+
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Account with this "+ phone_number + " does not exist!!", Toast.LENGTH_SHORT).show();
@@ -181,6 +190,7 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
     }
