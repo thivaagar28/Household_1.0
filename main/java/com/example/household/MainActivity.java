@@ -154,9 +154,6 @@ public class MainActivity extends AppCompatActivity
                 {
                     ServiceUsers usersData = snapshot.child("Service_Provider").child(field).child(phone_number).getValue(ServiceUsers.class);
 
-
-
-
                     if(usersData.getPassword().equals(password))
                     {
                         Toast.makeText(MainActivity.this, "Logged in successfully!!!", Toast.LENGTH_SHORT).show();
@@ -168,16 +165,12 @@ public class MainActivity extends AppCompatActivity
 
                         startActivity(intent);
 
-
-
                     }
                     else{
                         LoadingBar.dismiss();
                         Toast.makeText(MainActivity.this, "Password is incorrect!!!", Toast.LENGTH_SHORT).show();
 
                     }
-
-
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Account with this "+ phone_number + " does not exist!!", Toast.LENGTH_SHORT).show();
@@ -188,7 +181,6 @@ public class MainActivity extends AppCompatActivity
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }
