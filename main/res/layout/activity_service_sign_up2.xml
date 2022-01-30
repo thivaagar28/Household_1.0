@@ -84,7 +84,6 @@
 
         />
 
-
     <Button
         android:id="@+id/signup_button_Signup_page"
         android:layout_width="wrap_content"
