@@ -6,7 +6,6 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:id="@+id/drawerLayout"
 android:fitsSystemWindows="true"
-android:background="@drawable/androidimage"
 android:minWidth="19dp"
 
     >
@@ -21,14 +20,14 @@ android:minWidth="19dp"
         android:id="@+id/Selection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F7FFFFFF"
+        android:background="@drawable/androidimage"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F7FFFFFF"
+            android:background="#193498"
             app:subtitleTextColor="#0A0A0A"
             app:titleTextColor="#111111" />
 
@@ -38,7 +37,7 @@ android:minWidth="19dp"
             android:layout_width="291dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="150dp"
             android:text="        Plumbing Service        " />
 
@@ -48,7 +47,7 @@ android:minWidth="19dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/plumbing"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
             android:text="           Electrical Service       " />
 
@@ -57,7 +56,7 @@ android:minWidth="19dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/plumbing"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:text="        House Cleaning Service     " />
@@ -69,7 +68,7 @@ android:minWidth="19dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/plumbing"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
             android:text="        Pest Control Service     " />
 
