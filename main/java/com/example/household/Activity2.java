@@ -23,13 +23,16 @@ import io.paperdb.Paper;
 
 public class Activity2 extends AppCompatActivity {
 
-    private Button LOGIN, SIGNUP; // button for the homepage sign up and login
+    private Button LOGIN, SIGNUP;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
+
+
+
 
         //Login Button
         LOGIN = (Button) findViewById(R.id.login_button);
@@ -44,13 +47,18 @@ public class Activity2 extends AppCompatActivity {
         SIGNUP = (Button) findViewById(R.id.signup_button);
         SIGNUP.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                
+            public void onClick(View v) {
                 openSignUpActivity2();
             }
         });
 
+
+
+
+
     }
+
+
 
     public void openLoginActivity(){  // Login Button
         Intent intent = new Intent(this, LoginActivity.class);
